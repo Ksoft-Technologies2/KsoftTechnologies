@@ -68,19 +68,16 @@
     border-radius: 0.6rem !important;
     padding: 0.5rem;
   }
-  .NextDiv{
-    background: #180869;
-    height: 95vh;
-    padding: 1rem;
+  .carousel-item img{
+    height: 100vh !important;
+    width: 100% !important;
   }
-  .NextDiv h1{
-    color: #fff;
-    padding-top: 12rem;
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: bold;
+  .carousel-caption button{
+    background: #6366f1;
+    padding: 0.8rem;
   }
-  .NextDiv h6{
-    color: #fff;
-    font-family: sans-serif;
+  .carousel-caption h1{
+   font-size: 50px;
+   font-family: sans-serif;
+   font-weight: bold;
   }
