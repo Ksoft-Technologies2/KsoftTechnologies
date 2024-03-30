@@ -173,4 +173,7 @@
     .Notes h6{
        text-align: center;
     }
+    .Notes .btn{
+        margin-left: 9rem;
+    }
   }
