@@ -30,7 +30,7 @@ html{
     --secondary-color: rgb(27, 31, 41);
 }
 .container {
-    width: 100%;
+    width: 100% !important;
     height: 10000vh;
     position: relative;
     background: var(--secondary-color);
@@ -191,6 +191,7 @@ nav ul li a:hover::before {
         display: none;
     }
     ion-icon{
+        display: block;
         margin-right: 5rem;
     }
 }
