@@ -2,46 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---------------  CSS  --------------------->
-    <link rel="stylesheet" href="css/index.css">
     <title>Ksoft Technologies</title>
-    <!---------------  IONICONS  --------------------->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="Libraries/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-   <div class="container">
-    <nav>
-        <img src="img/KSOFTTECHNOLOGIESLOGO.png" alt="logo" class="logo">
+   <header id="top-header">
+    <div class="logo"><img src="img/KSOFTTECHNOLOGIESLOGO.png" alt="logo"></div>
+    <div class="navs">
         <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SERVICE</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTACT US</a></li>
+            <li><a href="#" class="hoverNavs">HOME</a></li>
+            <li><a href="#" class="hoverNavs">ABOUT US</a></li>
+            <div class="dropdown">
+                <button class="dropbtn hoverNavs">SERVICES<i class="fa fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Custom Software Development</a>
+                  <a href="#">Website Design And Development</a>
+                  <a href="#">Software Integration</a>
+                  <a href="#">Mobile App Development</a>
+                  <a href="#">UI/UX Design</a>
+                  <a href="#">Project Management</a>
+                  <a href="#">Website Training</a>
+                </div>
+              </div>
+            <li><a href="#" class="hoverNavs">OUR WORK</a></li>
+            <li><a href="#" class="hoverNavs">PORTFOLIO</a></li>
+            <div class="dropdown">
+                <button class="dropbtn hoverNavs">CONTACT US<i class="fa fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Request A Quote</a>
+                  <a href="#">Become A Partner</a>
+                </div>
+              </div>
+            <li><a href="#" class="hoverNavs">BLOG</a></li>
+            <button class="btn">Request A Quote</button>
         </ul>
-        <ion-icon id="icon" class="moon" name="moon"></ion-icon>
-        <div class="toggle-menu"><i class="fa fa-bars"></i></div>
-    </nav>
-    <div class="content">
-        <h1>TAKE YOUR BUSINESS<span> TO THE NEXT LEVEL</span></h1>
-        <p>Websites should be an engine for growth; not just a pretty brochure. Great web design is like a first date.</p>
-        <p>First impressions matter and we can certainly help you deliver that “Wow” factor.</p>
-        <a href="">Learn More</a>
+        <!-- <div class="toggle-icon"></div> -->
+        <button class="btn toggle-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <i class="fa fa-bars"></i>
+          </button>
+          
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <div class="navigations">
+                    <li><a href="#" class="hoverNavs">HOME</a></li>
+                    <li><a href="#" class="hoverNavs">ABOUT US</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn hoverNavs">SERVICES<i class="fa fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                          <a href="#">Custom Software Development</a>
+                          <a href="#">Website Design And Development</a>
+                          <a href="#">Software Integration</a>
+                          <a href="#">Mobile App Development</a>
+                          <a href="#">UI/UX Design</a>
+                          <a href="#">Project Management</a>
+                          <a href="#">Website Training</a>
+                        </div>
+                      </div>
+                    <li><a href="#" class="hoverNavs">OUR WORK</a></li>
+                    <li><a href="#" class="hoverNavs">PORTFOLIO</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn hoverNavs">CONTACT US<i class="fa fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                          <a href="#">Request A Quote</a>
+                          <a href="#">Become A Partner</a>
+                        </div>
+                      </div>
+                    <li><a href="#" class="hoverNavs">BLOG</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
     </div>
-    <div class="social_icons">
-        <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
-        <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
-        <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
-        <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
-    </div>
-   </div>
-   <!---------------  SCRIPT  --------------------->
-   <script src="Libraries/bootstrap/js/popper.js"></script>
-   <script src="js/index.js"></script>
-   <script src="Libraries/bootstrap/js/bootstrap.min.js"></script>  
-</body>   
+   </header>
+   <section class="Notes">
+    
+   </section>
+
+
+    <script src="Libraries/bootstrap/js/popper.js"></script>
+    <script src="Libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
 </html>
