@@ -60,4 +60,27 @@
     color:  #6366f1 !important;
 }
   .dropdown:hover .dropdown-content {display: block;}
-  
+  button{
+    border: none;
+    outline: none;
+    background: #fc5520;
+    color: #fff;
+    border-radius: 0.6rem !important;
+    padding: 0.5rem;
+  }
+  .NextDiv{
+    background: #180869;
+    height: 95vh;
+    padding: 1rem;
+  }
+  .NextDiv h1{
+    color: #fff;
+    padding-top: 12rem;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .NextDiv h6{
+    color: #fff;
+    font-family: sans-serif;
+  }
