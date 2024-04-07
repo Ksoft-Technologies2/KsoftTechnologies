@@ -41,6 +41,9 @@
 .toggle-icon{
     display: none;
 }
+.ItemsDiv .dropdown-item{
+    background: none !important;
+}
 @media screen and (max-width:400px){
     .imageMockupDiv img{
        display: none;
