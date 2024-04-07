@@ -3,95 +3,35 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #ffffff;
-    color: black;
+.navbar-brand img{
+    height: 15vh !important;
+    margin-left: 2rem;
+    margin-right: 5rem;
 }
-.dark-mode{
-    background-color: black;
-    color: white;
+.nav-link{
+    margin-right: 1rem !important;
+    font-family: sans-serif !important;
+    font-weight: bold !important;
+    color: #011260 !important;
 }
-#top-header{
+.mockupDiv{
     display: flex;
-    gap: 2rem;
-    background: #FFFFFF;
 }
-.logo-div a img{
-    height: 23vh;
-    margin-left: 1rem;
-    margin-right: 3rem;
-    margin-top: -1rem;
+.imageMockupDiv img{
+    height: 40vh;
+    padding: 0.5rem;
 }
-.navs{
-    display: flex;
-    gap: 2.5rem;
-}
-.navs .nav-item{
-    list-style-type: none;
-    margin-top: 2.5rem;
-    color: #011276;
-    font-family: sans-serif; 
-    font-weight: bold;
-}
-.hoverNavs {
-    display: inline-block;
-    position: relative;
-}
-.hoverNavs:hover{
-    color: #0087ca;
+.dropdown-item{
+    font-family: sans-serif !important;
+    font-weight: bold !important;
+    color: #011260 !important;
 }
 .nav-link:hover{
-    color: #0087ca;
+    color: #6366f1 !important;
 }
 .dropdown-item:hover{
-    color: #0087ca;
+    color: #6366f1 !important;
 }
-.hoverNavs::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-.hoverNavs:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-.hoverNavsButton{
-    background: orangered;
-    color: #fff !important;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    margin-top: -0.5rem;
-}
-.toggle-icon{
-    display: none;
-}
-@media screen and (max-width: 600px) {
-    .toggle-icon{
-        display: block;
-        margin-top: -1rem;
-        margin-left: 1.5rem;
-        font-size: 25px;
-    }
-    .logo-div a img{
-        height: 20vh;
-        margin-top: 0.2rem;
-        margin-left: 4rem;
-    }
-    .navs{
-        display: none;
-    }
-    #top-header{
-        background: #FFFFFF;
-    }
-    button{
-        border: none !important;
-        outline: none !important;
-    }
+.dropdown:hover .dropdown-menu {
+    display: block !important;
 }
