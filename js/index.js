@@ -1,14 +1,6 @@
-var icon = document.getElementById("icon");
+const labelBtn = document.querySelector("#flexSwitchCheckChecked");
 
-icon.onclick = function(){
-    document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")){
-        icon.name = "sunny";
-        icon.classList.remove("moon");
-        icon.classList.add("sun");
-    }else{
-        icon.name = "moon";
-        icon.classList.remove("sun");
-        icon.classList.add("moon");
-    }
-}
+labelBtn.addEventListener("change", function(){
+    var element = document.body
+    element.toggle.classList("dark-mode")
+})

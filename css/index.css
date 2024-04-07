@@ -3,47 +3,50 @@
     margin: 0;
     box-sizing: border-box;
 }
-#top-header {
+body{
+    background-color: #ffffff;
+    color: black;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+#top-header{
     display: flex;
     gap: 2rem;
     background: #FFFFFF;
-    height: 15vh;
-    width: 100%;
 }
-.navs ul{
+.logo-div a img{
+    height: 23vh;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-top: -1rem;
+}
+.navs{
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
 }
-.navs ul li a{
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #011276;
-}
-.navs ul li {
+.navs .nav-item{
     list-style-type: none;
     margin-top: 2.5rem;
-}
-.logo img{
-    height: 20vh;
-    margin-left: 2rem;
-} 
-.btn{
-    background: orangered;
-    color:#fff;
-    margin-top: 2rem;
-}
-.btn:hover{
-    background: orangered;
-    color:#fff;
+    color: #011276;
+    font-family: sans-serif; 
+    font-weight: bold;
 }
 .hoverNavs {
     display: inline-block;
     position: relative;
+}
+.hoverNavs:hover{
     color: #0087ca;
-  }
-  
-  .hoverNavs::after {
+}
+.nav-link:hover{
+    color: #0087ca;
+}
+.dropdown-item:hover{
+    color: #0087ca;
+}
+.hoverNavs::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -54,126 +57,41 @@
     background-color: #0087ca;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .hoverNavs:hover::after {
+}
+.hoverNavs:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
-  .dropbtn {
-    background: none;
-    border: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #011276;
-    padding-top: 2.5rem;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 230px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
+}
+.hoverNavsButton{
+    background: orangered;
+    color: #fff !important;
     padding: 0.5rem;
-    text-decoration: none;
-    display: block;
-    font-family: sans-serif;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown-content a:hover{
-    background: none;
-    color: #011276;
-    font-weight: bold;
-  }
+    border-radius: 0.5rem;
+    margin-top: -0.5rem;
+}
 .toggle-icon{
     display: none;
 }
-.Notes{
-    background: url("..//img/istkimg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    padding: 1rem;
-    height: 100vh;
-    width: 100%;
-}
-.Notes h1{
-    color: #ffffff;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding-top: 8rem;
-    font-size: 50px;
-}
-.Notes h6{
-    color: #ffffff;
-}
-  @media screen and (max-width:400px) {
-    .navs ul li a{
-        display: none;
-    }
-    .navs ul .dropdown{
-        display: none;
-    }
-    .navs ul .btn{
-        display: none;
-    }
+@media screen and (max-width: 600px) {
     .toggle-icon{
         display: block;
-        font-size: 25px;
-        margin-left: 5rem;
         margin-top: -1rem;
+        margin-left: 1.5rem;
+        font-size: 20px;
     }
-    .offcanvas{
-        width: 90% !important;
+    .logo-div a img{
+        height: 20vh;
+        margin-top: 0.2rem;
+        margin-left: 4rem;
     }
-    .offcanvas-title{
-        font-weight: bold !important;
-        font-family: sans-serif !important;
+    .navs{
+        display: none;
     }
-    .navigations li a{
-        text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #011276;
+    #top-header{
+        background: #FFFFFF;
     }
-    .navigations li{
-        list-style: none;
+    button{
+        border: none !important;
+        outline: none !important;
     }
-    .dropbtn{
-        margin-top: -2.7rem;
-        margin-bottom: 1rem;
-    }
-    .hoverNavs{
-        margin-bottom: 1rem;
-    }
-    .Notes h1{
-        text-align: center;
-        font-size: 35px;
-    }
-    .Notes h6{
-       text-align: center;
-    }
-    .Notes .btn{
-        margin-left: 7.5rem;
-    }
-  }
+}
