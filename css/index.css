@@ -35,3 +35,8 @@
 .dropdown:hover .dropdown-menu {
     display: block !important;
 }
+@media screen {
+    .imageMockupDiv img{
+       display: none;
+    }
+}
