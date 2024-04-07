@@ -20,14 +20,51 @@
             
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <div>
-                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <div class="mockupDiv">
+                          <div class="imageMockupDiv"><img src="img/mockup1.png" alt=""></div>
+                          <div class="mockupitems">
+                            <div class="ItemsDiv">
+                              <li><a class="dropdown-item" href="#">Custom Software Development</a></li>
+                              <li><a class="dropdown-item" href="#">Software Integration</a></li>
+                              <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                              <li><a class="dropdown-item" href="#">Website Development</a></li>
+                              <li><a class="dropdown-item" href="#">UI/UX Development</a></li>
+                              <li><a class="dropdown-item" href="#">Project Management</a></li>
+                              <li><a class="dropdown-item" href="#">Blog Homepage</a></li>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="dropdown mt-3">
+                <!-- <div class="dropdown mt-3">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                     Dropdown button
                   </button>
@@ -36,7 +73,7 @@
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

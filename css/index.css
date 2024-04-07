@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+.offcanvas{
+    z-index: 5000 !important;
+}
 .navbar-brand img{
     height: 15vh !important;
     margin-left: 2rem;
