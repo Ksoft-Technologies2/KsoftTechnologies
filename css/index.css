@@ -49,3 +49,11 @@
         display: block;
     }
 }
+@media screen and (max-width:600px){
+    .imageMockupDiv img{
+       display: none;
+    }
+    .toggle-icon{
+        display: block;
+    }
+}
