@@ -35,8 +35,14 @@
 .dropdown:hover .dropdown-menu {
     display: block !important;
 }
-@media screen {
+.toggle-icon{
+    display: none;
+}
+@media screen and (max-width:400px){
     .imageMockupDiv img{
        display: none;
+    }
+    .toggle-icon{
+        display: block;
     }
 }
